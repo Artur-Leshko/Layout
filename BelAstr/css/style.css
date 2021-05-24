@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic,cyrillic-ext');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1132px;
+    margin: auto;
+}
+
+section {
+    padding-top: 110px;
+}
+
+img {
+    width: 100%;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+
+    padding: 18px 0;
+
+    background-color: rgba(41,42,43,0.67);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+#toggle{
+    display: none;
+    color: #fff;
+}
+
+#main {
+    display: none;
+}
+
+header li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 50px;
+}
+
+nav {
+    margin-left: 10px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+
+    text-decoration: none;
+    transition: linear 0.2s;
+}
+
+nav a:hover {
+    color: #b6b3b3;
+    text-decoration: underline;
+}
+
+/* Intro */
+
+.intro {
+    min-height: 600px;
+
+    background-image: url(../images/car1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gray {
+    position: relative;
+    z-index: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 600px;
+
+    background-color: rgba(124,126,130,0.8);
+}
+
+.intro h1 {
+    position: relative;
+    z-index: 1;
+
+    color: #fff;
+
+    font-size: 30px;
+    font-weight: 600;
+
+    margin-bottom: 88px;
+
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.intro a {
+    position: relative;
+    z-index: 1;
+
+    color: #fff;
+    background-color: #1e69b8;
+
+    padding: 12px 20px;
+
+    font-size: 21.53px;
+    font-weight: 700;
+
+    text-decoration: none;
+    border-left: 5px solid #1b5fa6;
+}
+
+/* Популярные услуги */
+
+.subtitle {
+    color: #454545;
+    font-size: 21px;
+    font-weight: 400;
+
+    text-align: center;
+}
+
+.subtitle::after {
+    content: '';
+    display: block;
+
+    margin: 35px auto 30px;
+
+    height: 2px;
+    width: 81px;
+
+    background-color: #2171bc;
+}
+
+.subtitle_text {
+    color: #ababab;
+    font-size: 14px;
+    font-weight: 300px;
+
+    margin: 0 auto 110px;
+    width: 50%;
+
+    text-align: center;
+    line-height: 30px;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service_item p{
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+
+    margin-top: -5px;
+    padding: 20px 0 16px 0;
+
+    background-color: #f5f5f5;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.middle {
+    border-right: 1px solid #e5e4e4;
+    border-left: 1px solid #e5e4e4;
+}
+
+.button_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    color: #2378c0;
+    font-size: 13px;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #8fb3da;
+
+    margin-top: 77px;
+    padding: 10px 56px;
+    transition: linear 0.2s;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #2378c0;
+}
+
+/* Все виды ремонта */
+
+.second_text {
+    width: 60%;
+}
+
+.repair {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.repair_item {
+    width: 29%;
+    padding-left: 85px;
+    margin-bottom: 75px;
+    margin-left: 40px;
+}
+
+.lastrow {
+    margin-bottom: 0;
+}
+
+.repair_title {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.repair_text {
+    color: #737373;
+    font-size: 14px;
+    font-weight: 300;
+
+    line-height: 30px;
+}
+
+.first {
+    background-image: url(../images/3-1.png);
+    background-repeat: no-repeat;
+    background-position: 0 12px;
+}
+
+.second {
+    background-image: url(../images/3-2.png);
+    background-repeat: no-repeat;
+    background-position: 0 12px;
+}
+
+.third {
+    background-image: url(../images/3-3.png);
+    background-repeat: no-repeat;
+    background-position: 0 12px;
+}
+
+.fourth {
+    background-image: url(../images/3-4.png);
+    background-repeat: no-repeat;
+    background-position: 0 12px;
+}
+
+.fifth {
+    background-image: url(../images/3-5.png);
+    background-repeat: no-repeat;
+    background-position: 0 12px;
+}
+
+.sixth {
+    background-image: url(../images/3-6.png);
+    background-repeat: no-repeat;
+    background-position: 0 12px;
+}
+
+
+/* Обслуживание */
+
+#maintenance {
+    margin-top: 111px;
+
+    background-image: url(../images/car2.png);
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: -70px 1px;
+}
+
+section#maintenance {
+    padding-top: 0;
+}
+
+.second_gray{
+    background-color:#f5f5f5;
+    max-width: 50%;
+}
+
+.wrapper {
+    padding-left: 30px;
+}
+
+#maintenance .container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#maintenance h2 {
+    margin-top: 110px;
+}
+
+#maintenance h2, #maintenance p {
+    text-align: left;
+}
+
+#maintenance h2:after{
+    margin: 65px 0 50px;
+}
+
+#maintenance p {
+    margin: 0 0 65px;
+    width: 95%;
+}
+
+#maintenance ul {
+    column-count: 3;
+    padding-left: 20px;
+}
+
+#maintenance li {
+    list-style: url(../images/marker.png);
+    margin-bottom: 10px;
+}
+
+#maintenance ul a {
+    color: #7c7c7c;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+#maintenance .button_wrapper {
+    margin-bottom: 75px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #73767a;
+    padding: 110px 0;
+}
+
+footer .container {
+    display: flex;
+}
+
+.footer_group_left {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.our_contacts {
+    width: 40%;
+}
+
+.work_time {
+    width: 40%;
+}
+
+.footer_group_right {
+    width: 60%;
+}
+
+#contacts h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+#contacts h3::after {
+    content: '';
+    display: block;
+
+    height: 2px;
+    width: 40px;
+
+    margin: 22px 0 24px 0;
+
+    background-color: #aeafb0;
+}
+
+#contacts a, #contacts p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 30px;
+}
+
+#contacts a {
+    text-decoration: none;
+}
+
+#contacts a:hover {
+    text-decoration: underline #fff;
+}
+
+#contacts ul {
+    column-count: 2;
+    column-gap: 30px;
+}
+
+#contacts li {
+    list-style: none;
+}
+
+.footer_icons i {
+    color: #aeafb0;
+    border: 1px solid #aeafb0;
+
+    margin-top: 40px;
+    margin-right: 3px;
+    padding: 18px;
+    transition: linear 0.2s;
+}
+
+.footer_icons i:hover {
+    color: #73767a;
+    background-color: #aeafb0;
+}
+
+
+
+@media (max-width: 1140px) {
+    .container {
+        width: 932px;
+    }
+
+    /* Популярные услуги */
+
+    .subtitle_text {
+        width: 70%;
+    }
+
+
+    /* Обслуживание */
+
+    #maintenance {
+        background-size: 70%;
+        background-position: -220px 1px;
+    }
+
+
+    /* Footer */
+
+    .footer_group_right {
+        display: none;
+    }
+
+    .footer_group_left {
+        width: 87%;
+    }
+
+    .our_contacts {
+        width: 40%;
+        margin-left: 10px;
+    }
+
+    .work_time {
+        width: 40%;
+    }
+
+    .footer_icons {
+        margin-left: 6px;
+    }
+
+}
+
+@media (max-width: 943px) {
+    .container {
+        width: 90%;
+    }
+
+    /* Header */
+
+    .logo {
+        margin-left: 5px;
+    }
+
+    /* Популярные услуги */
+
+    #popular_service .subtitle_text {
+        margin-bottom: 50px;
+    }
+
+    .service {
+        flex-wrap: wrap;
+    }
+
+    .service_item {
+        width: 55%;
+        margin-top: 40px;
+    }
+
+    .middle {
+        border-right: none;
+        border-left: none;
+    }
+
+    /* Все виды ремонта */
+
+    #all_repairs .container {
+        width: 100%;
+    }
+
+    #all_repairs .subtitle_text {
+        width: 70%;
+    }
+
+    .repair {
+        justify-content: center;
+    }
+
+    .repair_item {
+        width: 30%;
+
+        margin-bottom: 20px;
+    }
+
+    /* Обслуживание */
+
+    #maintenance {
+        background-size: 120%;
+        background-position: -540px 1px;
+    }
+
+}
+
+@media (max-width: 740px) {
+
+    /* Header */
+
+    header nav {
+        display: none;
+    }
+
+    #toggle {
+        display: block;
+    }
+
+    header .container {
+        justify-content: space-between;
+    }
+
+    header nav li{
+        display: block;
+        padding: 19px 0 19px 10px;
+        background-color: #131820;
+        border-bottom: 1px solid #424750;
+    }
+
+    .lastinnav {
+        border-bottom: none;
+    }
+
+    #main {
+        display: block;
+    }
+
+    #toggle:hover + nav{
+        display: block;
+        position: absolute;
+        top: 65px;
+        left: -60px;
+        right: 0;;
+    }
+
+    /* Intro */
+
+    .intro {
+        background-position: -200px 0;
+    }
+
+    /* Популярные услуги */
+    .subtitle_text {
+        width: 78%;
+    }
+
+    .service_item {
+        width: 80%;
+    }
+
+    /* Все виды ремонта */
+
+    .repair {
+        justify-content: center;
+    }
+
+    .repair_item {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 60px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .repair_text {
+        width: 95%;
+        margin: auto;
+    }
+
+    .first, .second, .third, .fourth, .fifth {
+        background-position: center top;
+    }
+
+    .sixth {
+        display: none;
+    }
+
+    /* Обслуживание */
+
+    #maintenance {
+        background-size: 100%;
+        background-position: -70px 1px;
+    }
+
+    .second_gray{
+        max-width: 100%;
+        margin-top: 120%;
+    }
+
+    .wrapper {
+        padding-left: 0px;
+    }
+
+    #maintenance {
+        background-size: 100%;
+        background-position: 0 0;
+    }
+
+    #maintenance .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .second_gray{
+        background-color: initial;
+    }
+
+    #maintenance h2, #maintenance p {
+        text-align: center;
+    }
+
+    #maintenance h2:after{
+        margin: 20px auto 15px;
+    }
+
+    #maintenance ul {
+        column-count: 1;
+        padding-left: 0;
+        width: 40%;
+        margin: auto;
+    }
+
+    #maintenance li {
+        margin-bottom: 10px;
+    }
+
+    #maintenance ul a {
+        color: #7c7c7c;
+        font-size: 14px;
+        font-weight: 600;
+
+        text-decoration: none;
+    }
+
+    #maintenance .button_wrapper {
+        margin-bottom: 75px;
+    }
+
+    /* Footer */
+
+   .our_contacts, .work_time {
+       width: 100%;
+    }
+
+   .work_time {
+       margin-top: 40px;
+    }
+
+    .our_contacts, .footer_icons {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .intro {
+        background-position: -450px 0;
+    }
+
+    .service_item p {
+        font-size: 10px;
+    }
+}
